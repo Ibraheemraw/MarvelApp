@@ -14,7 +14,7 @@ struct Trailer {
     let trailerdescription: String
     let thumbnailFileName: String
     
-    static func fetchVideos() -> [Trailer]{
+    static func fetchVideos() -> [Trailer] {
         let trailer1 = Trailer(trailerName: "Ant Man & The Wasp", videoFileName: "AATW", trailerdescription: "Lang must once again don the Ant-Man suit and fight alongside the Wasp", thumbnailFileName: "AntMan2")
         let trailer2 = Trailer(trailerName: "Ant Man", videoFileName: "AntMan", trailerdescription: "Scott Lang is grappling with the consequences of his choices as both a superhero and a father", thumbnailFileName: "AntMan1")
         let trailer3 = Trailer(trailerName: "Avengers: Age of Ultron", videoFileName: "AOU", trailerdescription: "As the fate of Earth hangs in the balance, the team is put to the ultimate test as they battle Ultron, a technological terror hell-bent on human extinction.", thumbnailFileName: "Ultron")
