@@ -10,7 +10,7 @@ import UIKit
 
 class TrailerViewController: UIViewController {
     @IBOutlet weak var trailerTableView: UITableView!
-    var trailers = ["one", "two", "three"]
+    var trailers = Trailer.fetchVideos()
     override func viewDidLoad() {
         super.viewDidLoad()
         trailerTableView.delegate = self
@@ -27,9 +27,9 @@ extension TrailerViewController: UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "tCell", for: indexPath)
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: "tCell", for: indexPath) as? MarvelTrailerCell else { return UITableViewCell() }
         let trailersToSet =  trailers[indexPath.row]
-        cell.textLabel?.text = trailersToSet
+       cell.trailerIExpect = trailersToSet
         return cell
     }
     
@@ -37,5 +37,7 @@ extension TrailerViewController: UITableViewDataSource {
 }
 
 extension TrailerViewController: UITableViewDelegate {
-    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 450
+    }
 }

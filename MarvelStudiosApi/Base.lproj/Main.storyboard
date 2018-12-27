@@ -33,19 +33,26 @@
                                 <rect key="frame" x="0.0" y="100" width="414" height="762"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="tCell" rowHeight="302" id="RMP-Ej-Dio">
-                                        <rect key="frame" x="0.0" y="28" width="414" height="302"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="tCell" rowHeight="467" id="RMP-Ej-Dio" customClass="MarvelTrailerCell" customModule="MarvelStudiosApi" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="467"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="RMP-Ej-Dio" id="Ohm-E1-Yc9">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="301.66666666666669"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="466.66666666666669"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="uhz-Mi-i4n">
-                                                    <rect key="frame" x="20" y="11" width="374" height="280"/>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="AntMan1" translatesAutoresizingMaskIntoConstraints="NO" id="uhz-Mi-i4n">
+                                                    <rect key="frame" x="57" y="11" width="300" height="424"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="btn-play" translatesAutoresizingMaskIntoConstraints="NO" id="zY6-b8-9i2">
+                                                    <rect key="frame" x="162" y="189" width="89" height="89"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 </imageView>
                                             </subviews>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="trailerImg" destination="uhz-Mi-i4n" id="tlN-Se-XeV"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
@@ -101,4 +108,8 @@
             <point key="canvasLocation" x="2319" y="138"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="AntMan1" width="960" height="1440"/>
+        <image name="btn-play" width="373" height="373"/>
+    </resources>
 </document>
