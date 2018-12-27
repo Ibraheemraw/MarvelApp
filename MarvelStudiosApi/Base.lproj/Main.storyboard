@@ -17,20 +17,61 @@
             </objects>
             <point key="canvasLocation" x="-775" y="138"/>
         </scene>
-        <!--View Controller-->
+        <!--Trailer View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController storyboardIdentifier="trailers" id="BYZ-38-t0r" customClass="ViewController" customModule="MarvelStudiosApi" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="trailers" id="BYZ-38-t0r" customClass="TrailerViewController" customModule="MarvelStudiosApi" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="Mrm-3a-hzN">
+                                <rect key="frame" x="0.0" y="44" width="414" height="56"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </searchBar>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="wJ1-7p-17e">
+                                <rect key="frame" x="0.0" y="100" width="414" height="762"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="tCell" textLabel="ZAY-ag-BYh" style="IBUITableViewCellStyleDefault" id="RMP-Ej-Dio">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="RMP-Ej-Dio" id="Ohm-E1-Yc9">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="43.666666666666664"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="ZAY-ag-BYh">
+                                                    <rect key="frame" x="20" y="0.0" width="374" height="43.666666666666664"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
                         <color key="backgroundColor" red="0.66422420739999999" green="0.66424006219999998" blue="0.66423153879999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="wJ1-7p-17e" secondAttribute="trailing" id="14d-63-V2N"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="wJ1-7p-17e" secondAttribute="bottom" id="8O8-UU-Wp0"/>
+                            <constraint firstItem="wJ1-7p-17e" firstAttribute="top" secondItem="Mrm-3a-hzN" secondAttribute="bottom" id="Fb8-yS-JjW"/>
+                            <constraint firstItem="Mrm-3a-hzN" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="HrW-Z1-2tK"/>
+                            <constraint firstItem="Mrm-3a-hzN" firstAttribute="trailing" secondItem="wJ1-7p-17e" secondAttribute="trailing" id="Qed-eA-q6D"/>
+                            <constraint firstItem="Mrm-3a-hzN" firstAttribute="leading" secondItem="wJ1-7p-17e" secondAttribute="leading" id="Yh9-BJ-Djy"/>
+                            <constraint firstItem="wJ1-7p-17e" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="woC-CE-z91"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="trailerTableView" destination="wJ1-7p-17e" id="vfx-ee-G9S"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="275" y="138"/>
+            <point key="canvasLocation" x="273.91304347826087" y="137.94642857142856"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="1IG-l2-0lC">
