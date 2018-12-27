@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import AVKit
+import AVFoundation
 
 class TrailerViewController: UIViewController {
     @IBOutlet weak var trailerTableView: UITableView!

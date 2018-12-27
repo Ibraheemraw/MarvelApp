@@ -15,6 +15,38 @@
 		48ABD2E421D54FA700957972 /* MarvelPageVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48ABD2E321D54FA700957972 /* MarvelPageVC.swift */; };
 		48ABD2E621D567C200957972 /* Trailer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48ABD2E521D567C200957972 /* Trailer.swift */; };
 		48ABD2E821D584F900957972 /* MarvelTrailerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48ABD2E721D584F900957972 /* MarvelTrailerCell.swift */; };
+		48ABD30921D5890900957972 /* Spiderverse.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 48ABD2E921D588F400957972 /* Spiderverse.mp4 */; };
+		48ABD30A21D5890900957972 /* Venom.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 48ABD2EA21D588F500957972 /* Venom.mp4 */; };
+		48ABD30B21D5890900957972 /* DrStrange.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 48ABD2EB21D588F500957972 /* DrStrange.mp4 */; };
+		48ABD30C21D5890900957972 /* BlackPanther.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 48ABD2EC21D588F600957972 /* BlackPanther.mp4 */; };
+		48ABD30D21D5890900957972 /* IronMan3.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 48ABD2ED21D588F700957972 /* IronMan3.mp4 */; };
+		48ABD30E21D5890900957972 /* AntMan.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 48ABD2EE21D588F700957972 /* AntMan.mp4 */; };
+		48ABD30F21D5890900957972 /* GOTG2.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 48ABD2EF21D588F800957972 /* GOTG2.mp4 */; };
+		48ABD31021D5890900957972 /* Deadpool2.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 48ABD2F021D588F800957972 /* Deadpool2.mp4 */; };
+		48ABD31121D5890900957972 /* EndGame.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 48ABD2F121D588F900957972 /* EndGame.mp4 */; };
+		48ABD31221D5890900957972 /* AATW.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 48ABD2F221D588FA00957972 /* AATW.mp4 */; };
+		48ABD31321D5890900957972 /* CivilWar.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 48ABD2F321D588FA00957972 /* CivilWar.mp4 */; };
+		48ABD31421D5890900957972 /* Hulk.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 48ABD2F421D588FB00957972 /* Hulk.mp4 */; };
+		48ABD31521D5890900957972 /* IronMan.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 48ABD2F521D588FB00957972 /* IronMan.mp4 */; };
+		48ABD31621D5890900957972 /* AOU.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 48ABD2F621D588FC00957972 /* AOU.mp4 */; };
+		48ABD31721D5890900957972 /* SpidermanOT.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 48ABD2F721D588FC00957972 /* SpidermanOT.mp4 */; };
+		48ABD31821D5890900957972 /* HC.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 48ABD2F821D588FD00957972 /* HC.mp4 */; };
+		48ABD31921D5890900957972 /* DarkWorld.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 48ABD2F921D588FD00957972 /* DarkWorld.mp4 */; };
+		48ABD31A21D5890900957972 /* IronMan2.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 48ABD2FA21D588FE00957972 /* IronMan2.mp4 */; };
+		48ABD31B21D5890900957972 /* Avengers.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 48ABD2FB21D588FF00957972 /* Avengers.mp4 */; };
+		48ABD31C21D5890900957972 /* CATFA.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 48ABD2FC21D588FF00957972 /* CATFA.mp4 */; };
+		48ABD31D21D5890900957972 /* CaptainMarvel.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 48ABD2FD21D5890000957972 /* CaptainMarvel.mp4 */; };
+		48ABD31E21D5890900957972 /* Logan.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 48ABD2FE21D5890100957972 /* Logan.mp4 */; };
+		48ABD31F21D5890900957972 /* TAS.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 48ABD2FF21D5890100957972 /* TAS.mp4 */; };
+		48ABD32021D5890900957972 /* Ragnarok.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 48ABD30021D5890200957972 /* Ragnarok.mp4 */; };
+		48ABD32121D5890900957972 /* GOTG.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 48ABD30121D5890300957972 /* GOTG.mp4 */; };
+		48ABD32221D5890900957972 /* Thor.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 48ABD30221D5890400957972 /* Thor.mp4 */; };
+		48ABD32321D5890900957972 /* FFH.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 48ABD30321D5890500957972 /* FFH.mp4 */; };
+		48ABD32421D5890900957972 /* XMenOT.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 48ABD30421D5890600957972 /* XMenOT.mp4 */; };
+		48ABD32521D5890900957972 /* Deadpool.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 48ABD30521D5890600957972 /* Deadpool.mp4 */; };
+		48ABD32621D5890900957972 /* TAS2.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 48ABD30621D5890700957972 /* TAS2.mp4 */; };
+		48ABD32721D5890900957972 /* FirstClass.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 48ABD30721D5890800957972 /* FirstClass.mp4 */; };
+		48ABD32821D5890900957972 /* CAWS.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 48ABD30821D5890900957972 /* CAWS.mp4 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +60,38 @@
 		48ABD2E321D54FA700957972 /* MarvelPageVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarvelPageVC.swift; sourceTree = "<group>"; };
 		48ABD2E521D567C200957972 /* Trailer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Trailer.swift; sourceTree = "<group>"; };
 		48ABD2E721D584F900957972 /* MarvelTrailerCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarvelTrailerCell.swift; sourceTree = "<group>"; };
+		48ABD2E921D588F400957972 /* Spiderverse.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = Spiderverse.mp4; sourceTree = "<group>"; };
+		48ABD2EA21D588F500957972 /* Venom.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = Venom.mp4; sourceTree = "<group>"; };
+		48ABD2EB21D588F500957972 /* DrStrange.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = DrStrange.mp4; sourceTree = "<group>"; };
+		48ABD2EC21D588F600957972 /* BlackPanther.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = BlackPanther.mp4; sourceTree = "<group>"; };
+		48ABD2ED21D588F700957972 /* IronMan3.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = IronMan3.mp4; sourceTree = "<group>"; };
+		48ABD2EE21D588F700957972 /* AntMan.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = AntMan.mp4; sourceTree = "<group>"; };
+		48ABD2EF21D588F800957972 /* GOTG2.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = GOTG2.mp4; sourceTree = "<group>"; };
+		48ABD2F021D588F800957972 /* Deadpool2.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = Deadpool2.mp4; sourceTree = "<group>"; };
+		48ABD2F121D588F900957972 /* EndGame.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = EndGame.mp4; sourceTree = "<group>"; };
+		48ABD2F221D588FA00957972 /* AATW.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = AATW.mp4; sourceTree = "<group>"; };
+		48ABD2F321D588FA00957972 /* CivilWar.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = CivilWar.mp4; sourceTree = "<group>"; };
+		48ABD2F421D588FB00957972 /* Hulk.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = Hulk.mp4; sourceTree = "<group>"; };
+		48ABD2F521D588FB00957972 /* IronMan.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = IronMan.mp4; sourceTree = "<group>"; };
+		48ABD2F621D588FC00957972 /* AOU.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = AOU.mp4; sourceTree = "<group>"; };
+		48ABD2F721D588FC00957972 /* SpidermanOT.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = SpidermanOT.mp4; sourceTree = "<group>"; };
+		48ABD2F821D588FD00957972 /* HC.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = HC.mp4; sourceTree = "<group>"; };
+		48ABD2F921D588FD00957972 /* DarkWorld.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = DarkWorld.mp4; sourceTree = "<group>"; };
+		48ABD2FA21D588FE00957972 /* IronMan2.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = IronMan2.mp4; sourceTree = "<group>"; };
+		48ABD2FB21D588FF00957972 /* Avengers.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = Avengers.mp4; sourceTree = "<group>"; };
+		48ABD2FC21D588FF00957972 /* CATFA.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = CATFA.mp4; sourceTree = "<group>"; };
+		48ABD2FD21D5890000957972 /* CaptainMarvel.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = CaptainMarvel.mp4; sourceTree = "<group>"; };
+		48ABD2FE21D5890100957972 /* Logan.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = Logan.mp4; sourceTree = "<group>"; };
+		48ABD2FF21D5890100957972 /* TAS.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = TAS.mp4; sourceTree = "<group>"; };
+		48ABD30021D5890200957972 /* Ragnarok.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = Ragnarok.mp4; sourceTree = "<group>"; };
+		48ABD30121D5890300957972 /* GOTG.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = GOTG.mp4; sourceTree = "<group>"; };
+		48ABD30221D5890400957972 /* Thor.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = Thor.mp4; sourceTree = "<group>"; };
+		48ABD30321D5890500957972 /* FFH.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = FFH.mp4; sourceTree = "<group>"; };
+		48ABD30421D5890600957972 /* XMenOT.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = XMenOT.mp4; sourceTree = "<group>"; };
+		48ABD30521D5890600957972 /* Deadpool.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = Deadpool.mp4; sourceTree = "<group>"; };
+		48ABD30621D5890700957972 /* TAS2.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = TAS2.mp4; sourceTree = "<group>"; };
+		48ABD30721D5890800957972 /* FirstClass.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = FirstClass.mp4; sourceTree = "<group>"; };
+		48ABD30821D5890900957972 /* CAWS.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = CAWS.mp4; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,11 +130,51 @@
 				48ABD2E721D584F900957972 /* MarvelTrailerCell.swift */,
 				48ABD2E521D567C200957972 /* Trailer.swift */,
 				48ABD2E321D54FA700957972 /* MarvelPageVC.swift */,
+				48ABD32921D5895500957972 /* Videos */,
 				48ABD2D821D547EA00957972 /* Assets.xcassets */,
 				48ABD2DA21D547EA00957972 /* LaunchScreen.storyboard */,
 				48ABD2DD21D547EA00957972 /* Info.plist */,
 			);
 			path = MarvelStudiosApi;
+			sourceTree = "<group>";
+		};
+		48ABD32921D5895500957972 /* Videos */ = {
+			isa = PBXGroup;
+			children = (
+				48ABD2F221D588FA00957972 /* AATW.mp4 */,
+				48ABD2EE21D588F700957972 /* AntMan.mp4 */,
+				48ABD2F621D588FC00957972 /* AOU.mp4 */,
+				48ABD2FB21D588FF00957972 /* Avengers.mp4 */,
+				48ABD2EC21D588F600957972 /* BlackPanther.mp4 */,
+				48ABD2FD21D5890000957972 /* CaptainMarvel.mp4 */,
+				48ABD2FC21D588FF00957972 /* CATFA.mp4 */,
+				48ABD30821D5890900957972 /* CAWS.mp4 */,
+				48ABD2F321D588FA00957972 /* CivilWar.mp4 */,
+				48ABD2F921D588FD00957972 /* DarkWorld.mp4 */,
+				48ABD30521D5890600957972 /* Deadpool.mp4 */,
+				48ABD2F021D588F800957972 /* Deadpool2.mp4 */,
+				48ABD2EB21D588F500957972 /* DrStrange.mp4 */,
+				48ABD2F121D588F900957972 /* EndGame.mp4 */,
+				48ABD30321D5890500957972 /* FFH.mp4 */,
+				48ABD30721D5890800957972 /* FirstClass.mp4 */,
+				48ABD30121D5890300957972 /* GOTG.mp4 */,
+				48ABD2EF21D588F800957972 /* GOTG2.mp4 */,
+				48ABD2F821D588FD00957972 /* HC.mp4 */,
+				48ABD2F421D588FB00957972 /* Hulk.mp4 */,
+				48ABD2F521D588FB00957972 /* IronMan.mp4 */,
+				48ABD2FA21D588FE00957972 /* IronMan2.mp4 */,
+				48ABD2ED21D588F700957972 /* IronMan3.mp4 */,
+				48ABD2FE21D5890100957972 /* Logan.mp4 */,
+				48ABD30021D5890200957972 /* Ragnarok.mp4 */,
+				48ABD2F721D588FC00957972 /* SpidermanOT.mp4 */,
+				48ABD2E921D588F400957972 /* Spiderverse.mp4 */,
+				48ABD2FF21D5890100957972 /* TAS.mp4 */,
+				48ABD30621D5890700957972 /* TAS2.mp4 */,
+				48ABD30221D5890400957972 /* Thor.mp4 */,
+				48ABD2EA21D588F500957972 /* Venom.mp4 */,
+				48ABD30421D5890600957972 /* XMenOT.mp4 */,
+			);
+			path = Videos;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -132,8 +236,40 @@
 			buildActionMask = 2147483647;
 			files = (
 				48ABD2DC21D547EA00957972 /* LaunchScreen.storyboard in Resources */,
+				48ABD32721D5890900957972 /* FirstClass.mp4 in Resources */,
 				48ABD2D921D547EA00957972 /* Assets.xcassets in Resources */,
+				48ABD30D21D5890900957972 /* IronMan3.mp4 in Resources */,
+				48ABD32821D5890900957972 /* CAWS.mp4 in Resources */,
+				48ABD30F21D5890900957972 /* GOTG2.mp4 in Resources */,
+				48ABD31C21D5890900957972 /* CATFA.mp4 in Resources */,
+				48ABD31A21D5890900957972 /* IronMan2.mp4 in Resources */,
+				48ABD30A21D5890900957972 /* Venom.mp4 in Resources */,
+				48ABD31D21D5890900957972 /* CaptainMarvel.mp4 in Resources */,
+				48ABD31021D5890900957972 /* Deadpool2.mp4 in Resources */,
+				48ABD30921D5890900957972 /* Spiderverse.mp4 in Resources */,
+				48ABD32021D5890900957972 /* Ragnarok.mp4 in Resources */,
+				48ABD32621D5890900957972 /* TAS2.mp4 in Resources */,
+				48ABD31121D5890900957972 /* EndGame.mp4 in Resources */,
+				48ABD31721D5890900957972 /* SpidermanOT.mp4 in Resources */,
+				48ABD31321D5890900957972 /* CivilWar.mp4 in Resources */,
+				48ABD31621D5890900957972 /* AOU.mp4 in Resources */,
+				48ABD31F21D5890900957972 /* TAS.mp4 in Resources */,
+				48ABD31821D5890900957972 /* HC.mp4 in Resources */,
+				48ABD31221D5890900957972 /* AATW.mp4 in Resources */,
+				48ABD32421D5890900957972 /* XMenOT.mp4 in Resources */,
+				48ABD32521D5890900957972 /* Deadpool.mp4 in Resources */,
+				48ABD32321D5890900957972 /* FFH.mp4 in Resources */,
+				48ABD31E21D5890900957972 /* Logan.mp4 in Resources */,
+				48ABD31B21D5890900957972 /* Avengers.mp4 in Resources */,
+				48ABD32121D5890900957972 /* GOTG.mp4 in Resources */,
+				48ABD30B21D5890900957972 /* DrStrange.mp4 in Resources */,
+				48ABD30C21D5890900957972 /* BlackPanther.mp4 in Resources */,
+				48ABD30E21D5890900957972 /* AntMan.mp4 in Resources */,
+				48ABD32221D5890900957972 /* Thor.mp4 in Resources */,
 				48ABD2D721D547E700957972 /* Main.storyboard in Resources */,
+				48ABD31521D5890900957972 /* IronMan.mp4 in Resources */,
+				48ABD31921D5890900957972 /* DarkWorld.mp4 in Resources */,
+				48ABD31421D5890900957972 /* Hulk.mp4 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
