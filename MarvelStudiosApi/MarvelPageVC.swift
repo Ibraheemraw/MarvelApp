@@ -14,7 +14,6 @@ lazy var allVC = [self.getViewController(storyboard: "trailers"),self.getViewCon
         super.viewDidLoad()
         dataSource = self
         setViewControllers([allVC[0]], direction: .forward, animated: true, completion: nil)
-       print("test commit")
     }
     
     func getViewController(storyboard name: String) -> UIViewController {

@@ -13,6 +13,7 @@
 		48ABD2D921D547EA00957972 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 48ABD2D821D547EA00957972 /* Assets.xcassets */; };
 		48ABD2DC21D547EA00957972 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 48ABD2DA21D547EA00957972 /* LaunchScreen.storyboard */; };
 		48ABD2E421D54FA700957972 /* MarvelPageVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48ABD2E321D54FA700957972 /* MarvelPageVC.swift */; };
+		48ABD2E621D567C200957972 /* Trailer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48ABD2E521D567C200957972 /* Trailer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		48ABD2DB21D547EA00957972 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		48ABD2DD21D547EA00957972 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		48ABD2E321D54FA700957972 /* MarvelPageVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarvelPageVC.swift; sourceTree = "<group>"; };
+		48ABD2E521D567C200957972 /* Trailer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Trailer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +61,7 @@
 				48ABD2D121D547E700957972 /* AppDelegate.swift */,
 				48ABD2D321D547E700957972 /* TrailerViewController.swift */,
 				48ABD2D521D547E700957972 /* Main.storyboard */,
+				48ABD2E521D567C200957972 /* Trailer.swift */,
 				48ABD2E321D54FA700957972 /* MarvelPageVC.swift */,
 				48ABD2D821D547EA00957972 /* Assets.xcassets */,
 				48ABD2DA21D547EA00957972 /* LaunchScreen.storyboard */,
@@ -141,6 +144,7 @@
 				48ABD2D421D547E700957972 /* TrailerViewController.swift in Sources */,
 				48ABD2E421D54FA700957972 /* MarvelPageVC.swift in Sources */,
 				48ABD2D221D547E700957972 /* AppDelegate.swift in Sources */,
+				48ABD2E621D567C200957972 /* Trailer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
