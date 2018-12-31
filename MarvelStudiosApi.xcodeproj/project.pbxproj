@@ -49,6 +49,7 @@
 		48ABD32821D5890900957972 /* CAWS.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 48ABD30821D5890900957972 /* CAWS.mp4 */; };
 		48ABD33E21DA814000957972 /* Character.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48ABD33D21DA814000957972 /* Character.swift */; };
 		48ABD34021DA924000957972 /* SecretKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48ABD33F21DA924000957972 /* SecretKeys.swift */; };
+		48ABD34221DA947900957972 /* CharacterAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48ABD34121DA947900957972 /* CharacterAPIClient.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -96,6 +97,7 @@
 		48ABD30821D5890900957972 /* CAWS.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = CAWS.mp4; sourceTree = "<group>"; };
 		48ABD33D21DA814000957972 /* Character.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Character.swift; sourceTree = "<group>"; };
 		48ABD33F21DA924000957972 /* SecretKeys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecretKeys.swift; sourceTree = "<group>"; };
+		48ABD34121DA947900957972 /* CharacterAPIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterAPIClient.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -135,6 +137,7 @@
 				48ABD2E521D567C200957972 /* Trailer.swift */,
 				48ABD33D21DA814000957972 /* Character.swift */,
 				48ABD33F21DA924000957972 /* SecretKeys.swift */,
+				48ABD34121DA947900957972 /* CharacterAPIClient.swift */,
 				48ABD2E321D54FA700957972 /* MarvelPageVC.swift */,
 				48ABD32921D5895500957972 /* Videos */,
 				48ABD2D821D547EA00957972 /* Assets.xcassets */,
@@ -287,6 +290,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				48ABD2D421D547E700957972 /* TrailerViewController.swift in Sources */,
+				48ABD34221DA947900957972 /* CharacterAPIClient.swift in Sources */,
 				48ABD2E421D54FA700957972 /* MarvelPageVC.swift in Sources */,
 				48ABD2D221D547E700957972 /* AppDelegate.swift in Sources */,
 				48ABD33E21DA814000957972 /* Character.swift in Sources */,
