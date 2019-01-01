@@ -8,7 +8,7 @@
 
 import UIKit
 
-class Character: Codable {
+struct Character: Codable {
     let code: Int?
     let status: String?
     let copyright: String?

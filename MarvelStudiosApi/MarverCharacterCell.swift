@@ -18,6 +18,6 @@ class MarverCharacterCell: UITableViewCell {
     }
     
     func updateCharacterUI(){
-        characterImage.image = UIImage.init(contentsOfFile: characterIExpect.data?.thumbnail)
+//        characterImage.image = UIImage.init(contentsOfFile: characterIExpect.data?.thumbnail)
     }
 }
