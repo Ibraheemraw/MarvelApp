@@ -12,6 +12,7 @@ import AVFoundation
 
 class TrailerViewController: UIViewController {
     @IBOutlet weak var trailerTableView: UITableView!
+    @IBOutlet weak var trailerSearchBar: UISearchBar!
     var trailers = Trailer.fetchVideos()
     var player = AVPlayer()
     var marvelPlayerVC = AVPlayerViewController()
@@ -19,11 +20,16 @@ class TrailerViewController: UIViewController {
         super.viewDidLoad()
         trailerTableView.delegate = self
         trailerTableView.dataSource = self
+        trailerSearchBar.delegate = self
 //        self.title = "MARVEL STUDIOS"
         
     }
 
 
+}
+
+extension TrailerViewController: UISearchBarDelegate {
+    
 }
 
 extension TrailerViewController: UITableViewDataSource {

@@ -50,6 +50,8 @@
 		48ABD33E21DA814000957972 /* Character.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48ABD33D21DA814000957972 /* Character.swift */; };
 		48ABD34021DA924000957972 /* SecretKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48ABD33F21DA924000957972 /* SecretKeys.swift */; };
 		48ABD34221DA947900957972 /* CharacterAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48ABD34121DA947900957972 /* CharacterAPIClient.swift */; };
+		48ABD34421DA9E3900957972 /* CharacterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48ABD34321DA9E3900957972 /* CharacterViewController.swift */; };
+		48ABD34621DBF13D00957972 /* MarverCharacterCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48ABD34521DBF13D00957972 /* MarverCharacterCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -98,6 +100,8 @@
 		48ABD33D21DA814000957972 /* Character.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Character.swift; sourceTree = "<group>"; };
 		48ABD33F21DA924000957972 /* SecretKeys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecretKeys.swift; sourceTree = "<group>"; };
 		48ABD34121DA947900957972 /* CharacterAPIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterAPIClient.swift; sourceTree = "<group>"; };
+		48ABD34321DA9E3900957972 /* CharacterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterViewController.swift; sourceTree = "<group>"; };
+		48ABD34521DBF13D00957972 /* MarverCharacterCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarverCharacterCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -133,7 +137,9 @@
 				48ABD2D121D547E700957972 /* AppDelegate.swift */,
 				48ABD2D321D547E700957972 /* TrailerViewController.swift */,
 				48ABD2D521D547E700957972 /* Main.storyboard */,
+				48ABD34321DA9E3900957972 /* CharacterViewController.swift */,
 				48ABD2E721D584F900957972 /* MarvelTrailerCell.swift */,
+				48ABD34521DBF13D00957972 /* MarverCharacterCell.swift */,
 				48ABD2E521D567C200957972 /* Trailer.swift */,
 				48ABD33D21DA814000957972 /* Character.swift */,
 				48ABD33F21DA924000957972 /* SecretKeys.swift */,
@@ -289,11 +295,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				48ABD34421DA9E3900957972 /* CharacterViewController.swift in Sources */,
 				48ABD2D421D547E700957972 /* TrailerViewController.swift in Sources */,
 				48ABD34221DA947900957972 /* CharacterAPIClient.swift in Sources */,
 				48ABD2E421D54FA700957972 /* MarvelPageVC.swift in Sources */,
 				48ABD2D221D547E700957972 /* AppDelegate.swift in Sources */,
 				48ABD33E21DA814000957972 /* Character.swift in Sources */,
+				48ABD34621DBF13D00957972 /* MarverCharacterCell.swift in Sources */,
 				48ABD2E821D584F900957972 /* MarvelTrailerCell.swift in Sources */,
 				48ABD34021DA924000957972 /* SecretKeys.swift in Sources */,
 				48ABD2E621D567C200957972 /* Trailer.swift in Sources */,
