@@ -36,9 +36,10 @@ extension CharacterViewController: UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        guard let cell = tableView.dequeueReusableCell(withIdentifier: "characterCell", for: indexPath) as? MarverCharacterCell else {return UITableViewCell()}
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: "characterCell", for: indexPath) as? MarvelCharacterCell else {return UITableViewCell()}
         let charactersToSet = characters[indexPath.row]
-        return UITableViewCell()
+        cell.characterIExpect = charactersToSet
+        return cell
     }
     
     

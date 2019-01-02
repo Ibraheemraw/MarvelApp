@@ -26,7 +26,7 @@ final class CharacterAPIClient {
                 //decoding of JSON using JSON decoder. it might throw and errror so we have to set up a do catch
                 do {
                     let charcaters = try JSONDecoder().decode(Character.self, from: data)
-                    print("Display characterData: \([charcaters].count)")
+                    print("Display characterData count is: \([charcaters].count)")
                 } catch {
                     print("error is \(error)")
                 }

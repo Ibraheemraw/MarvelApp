@@ -8,16 +8,20 @@
 
 import UIKit
 
-class MarverCharacterCell: UITableViewCell {
+class MarvelCharacterCell: UITableViewCell {
 
     @IBOutlet weak var characterImage: UIImageView!
     var characterIExpect: Character! {
         didSet{
             updateCharacterUI()
+           
         }
     }
     
     func updateCharacterUI(){
-//        characterImage.image = UIImage.init(contentsOfFile: characterIExpect.data?.thumbnail)
+        guard let path = characterIExpect.data?.thumbnail?.path, let ext = characterIExpect.data?.thumbnail?.extension else {return}
+        let imageURL = path + ext
+        characterImage.image = UIImage.init(contentsOfFile: imageURL)
+        print("This is url is ", imageURL)
     }
 }

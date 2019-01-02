@@ -95,14 +95,14 @@
                                 <rect key="frame" x="0.0" y="100" width="414" height="762"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="characterCell" rowHeight="217" id="EB9-Ws-TGw" customClass="MarverCharacterCell" customModule="MarvelStudiosApi" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="characterCell" rowHeight="217" id="EB9-Ws-TGw" customClass="MarvelCharacterCell" customModule="MarvelStudiosApi" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="414" height="217"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="EB9-Ws-TGw" id="Ood-ZX-RrV">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="216.66666666666666"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Qjo-j3-6eu">
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="stanlee" translatesAutoresizingMaskIntoConstraints="NO" id="Qjo-j3-6eu">
                                                     <rect key="frame" x="103.66666666666669" y="32.666666666666671" width="207" height="151.66666666666663"/>
                                                 </imageView>
                                             </subviews>
@@ -113,6 +113,9 @@
                                                 <constraint firstItem="Qjo-j3-6eu" firstAttribute="height" secondItem="Ood-ZX-RrV" secondAttribute="height" multiplier="0.7" id="w9u-z9-goJ"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="characterImage" destination="Qjo-j3-6eu" id="uYZ-73-h3L"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
@@ -157,5 +160,6 @@
     <resources>
         <image name="AntMan1" width="960" height="1440"/>
         <image name="btn-play" width="373" height="373"/>
+        <image name="stanlee" width="700" height="607"/>
     </resources>
 </document>
