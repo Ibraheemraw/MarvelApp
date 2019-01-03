@@ -11,7 +11,8 @@ import UIKit
 class MarvelCharacterCell: UITableViewCell {
 
     @IBOutlet weak var characterImage: UIImageView!
-    var characterIExpect: Character! {
+    @IBOutlet weak var heroNameLabel: UILabel!
+    var characterIExpect: MarvelCharacter! {
         didSet{
             updateCharacterUI()
            
@@ -19,9 +20,29 @@ class MarvelCharacterCell: UITableViewCell {
     }
     
     func updateCharacterUI(){
-        guard let path = characterIExpect.data?.thumbnail?.path, let ext = characterIExpect.data?.thumbnail?.extension else {return}
-        let imageURL = path + ext
-        characterImage.image = UIImage.init(contentsOfFile: imageURL)
-        print("This is url is ", imageURL)
+        heroNameLabel.text = characterIExpect.name
+        
+           
+        
+//        let path = characterIExpect.data?.thumbnail?.path
+//        let ext = characterIExpect.data?.thumbnail?.extension
+      
+        let imageURL = characterIExpect.thumbnail.path + "." +
+        characterIExpect.thumbnail.ext
+        
+        ImageHelper.getImageWithPath(path: imageURL) { (error, image) in
+            if let error = error {
+                print("image error: \(error)")
+            } else if let image = image {
+                DispatchQueue.main.async {
+                    self.characterImage.image = image
+                }
+            }
+        }
+        
+        
+        
+        
+//        print("This is url is ", imageURL)
     }
 }

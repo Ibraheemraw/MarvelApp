@@ -9,11 +9,11 @@
 import Foundation
 
 final class CharacterAPIClient {
-    static func searchCharacters(){
+    static func searchCharacters( callBack: @escaping(Error?, [MarvelCharacter]?) -> Void ){
         // endpoint = url
-        let urlString = "https://gateway.marvel.com:443/v1/public/characters?&ts=\(SecretKeys.ts)&apikey=\(SecretKeys.apiKey)&hash=\(SecretKeys.hash)"
+        let urlString = "https://gateway.marvel.com:443/v1/public/characters?events=\(SecretKeys.events)&ts=\(SecretKeys.ts)&apikey=\(SecretKeys.apiKey)&hash=\(SecretKeys.hash)"
         guard let url = URL(string: urlString) else {
-            print("bad url: \(urlString)")
+            callBack("bad url \(urlString)" as? Error, nil)
             return
         }
         URLSession.shared.dataTask(with: url){(data, response, error) in
@@ -21,14 +21,17 @@ final class CharacterAPIClient {
                 print("response status code is \(response.statusCode)")
             }
             if let error = error {
-               print("error is \(error)")
+              callBack(error, nil)
             } else if let data = data  {
                 //decoding of JSON using JSON decoder. it might throw and errror so we have to set up a do catch
                 do {
-                    let charcaters = try JSONDecoder().decode(Character.self, from: data)
-                    print("Display characterData count is: \([charcaters].count)")
+                    let results = try JSONDecoder().decode(AllInfo.self, from: data)
+                    let characters = results.data.results
+                   
+                    callBack(nil, characters)
+                  
                 } catch {
-                    print("error is \(error)")
+                    callBack(error, nil)
                 }
             }
             

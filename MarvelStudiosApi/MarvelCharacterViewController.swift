@@ -8,29 +8,44 @@
 
 import UIKit
 
-class CharacterViewController: UIViewController {
+class MarvelCharacterViewController: UIViewController {
     @IBOutlet weak var characterTableView: UITableView!
     @IBOutlet weak var characterSearchBar: UISearchBar!
-    var characters = [Character]()
+    var characters = [MarvelCharacter](){
+        didSet{
+            DispatchQueue.main.async {// dispatch back to the main thread
+                self.characterTableView.reloadData()
+            }
+        }
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
         characterTableView.dataSource =  self
         characterTableView.delegate = self
         characterSearchBar.delegate = self
-        CharacterAPIClient.searchCharacters()
+        getData()
+//        CharacterAPIClient.searchCharacters()
         
        
+    }
+    
+    func getData() {
+        CharacterAPIClient.searchCharacters { (error, onlineCharacters) in
+            self.characters = onlineCharacters ?? []
+        }
     }
 
 }
 
-extension CharacterViewController: UISearchBarDelegate{
+extension MarvelCharacterViewController: UISearchBarDelegate{
     
 }
-extension CharacterViewController: UITableViewDelegate {
-    
+extension MarvelCharacterViewController: UITableViewDelegate {
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 500
+    }
 }
-extension CharacterViewController: UITableViewDataSource {
+extension MarvelCharacterViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return characters.count
     }

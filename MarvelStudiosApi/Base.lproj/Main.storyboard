@@ -12,7 +12,7 @@
         <!--Marvel PageVC-->
         <scene sceneID="BJh-zF-fc4">
             <objects>
-                <pageViewController autoresizesArchivedViewToFullSize="NO" transitionStyle="pageCurl" navigationOrientation="horizontal" spineLocation="min" id="lgU-J8-DVr" customClass="MarvelPageVC" customModule="MarvelStudiosApi" customModuleProvider="target" sceneMemberID="viewController"/>
+                <pageViewController autoresizesArchivedViewToFullSize="NO" transitionStyle="scroll" navigationOrientation="horizontal" spineLocation="none" id="lgU-J8-DVr" customClass="MarvelPageVC" customModule="MarvelStudiosApi" customModuleProvider="target" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nBG-9u-2i4" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-775" y="138"/>
@@ -79,10 +79,10 @@
             </objects>
             <point key="canvasLocation" x="273.91304347826087" y="137.94642857142856"/>
         </scene>
-        <!--Character View Controller-->
+        <!--Marvel Character View Controller-->
         <scene sceneID="1IG-l2-0lC">
             <objects>
-                <viewController storyboardIdentifier="comics" id="9SO-8H-0aB" customClass="CharacterViewController" customModule="MarvelStudiosApi" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="comics" id="9SO-8H-0aB" customClass="MarvelCharacterViewController" customModule="MarvelStudiosApi" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="age-zg-UFE">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -103,18 +103,28 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="stanlee" translatesAutoresizingMaskIntoConstraints="NO" id="Qjo-j3-6eu">
-                                                    <rect key="frame" x="103.66666666666669" y="32.666666666666671" width="207" height="151.66666666666663"/>
+                                                    <rect key="frame" x="62" y="32.666666666666671" width="290" height="151.66666666666663"/>
                                                 </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aVe-Vb-fgS">
+                                                    <rect key="frame" x="31" y="11" width="352" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstItem="Qjo-j3-6eu" firstAttribute="width" secondItem="Ood-ZX-RrV" secondAttribute="width" multiplier="0.5" id="BYu-Hy-Zmk"/>
+                                                <constraint firstItem="Qjo-j3-6eu" firstAttribute="width" secondItem="Ood-ZX-RrV" secondAttribute="width" multiplier="0.7" id="BYu-Hy-Zmk"/>
+                                                <constraint firstItem="aVe-Vb-fgS" firstAttribute="top" secondItem="Ood-ZX-RrV" secondAttribute="topMargin" id="Bah-yn-w0H"/>
                                                 <constraint firstItem="Qjo-j3-6eu" firstAttribute="centerX" secondItem="Ood-ZX-RrV" secondAttribute="centerX" id="MpS-ux-z0H"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="aVe-Vb-fgS" secondAttribute="trailing" constant="11" id="TNY-c1-and"/>
+                                                <constraint firstItem="aVe-Vb-fgS" firstAttribute="leading" secondItem="Ood-ZX-RrV" secondAttribute="leadingMargin" constant="11" id="dH2-oi-WEP"/>
                                                 <constraint firstItem="Qjo-j3-6eu" firstAttribute="centerY" secondItem="Ood-ZX-RrV" secondAttribute="centerY" id="gwO-LU-IDf"/>
                                                 <constraint firstItem="Qjo-j3-6eu" firstAttribute="height" secondItem="Ood-ZX-RrV" secondAttribute="height" multiplier="0.7" id="w9u-z9-goJ"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
                                             <outlet property="characterImage" destination="Qjo-j3-6eu" id="uYZ-73-h3L"/>
+                                            <outlet property="heroNameLabel" destination="aVe-Vb-fgS" id="xJU-iL-tRl"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
