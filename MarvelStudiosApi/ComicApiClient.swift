@@ -10,7 +10,7 @@ import Foundation
 
 final class ComicApiClient {
     static func searchComics(callBack: @escaping(Error?, [MarvelComic]?) -> Void) {
-        let urlString = "https://gateway.marvel.com:443/v1/public/comics?format=comic&title=Avengers&\(SecretKeys.ts)=1&apikey=\(SecretKeys.apiKey)&hash=\(SecretKeys.hash)"
+        let urlString = "https://gateway.marvel.com:443/v1/public/comics?format=comic&title=Avengers&ts=\(SecretKeys.ts)&apikey=\(SecretKeys.apiKey)&hash=\(SecretKeys.hash)"
         guard let url = URL(string: urlString) else {
             callBack("bad url \(urlString)" as? Error, nil)
             return
@@ -30,6 +30,7 @@ final class ComicApiClient {
                     callBack(nil, comics)
                     
                 } catch {
+                    print(error)
                     callBack(error, nil)
                 }
             }

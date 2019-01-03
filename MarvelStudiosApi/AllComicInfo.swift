@@ -19,7 +19,7 @@ struct ComicDataWrapper: Codable {
 struct MarvelComic: Codable {
     let title: String
     let pageCount: Int
-    let price: [MarvelComicPrice]
+    let prices: [MarvelComicPrice]
     let thumbnail: ComicThumbnailWrapper
 }
 struct MarvelComicPrice: Codable {
