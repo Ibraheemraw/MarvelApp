@@ -158,13 +158,32 @@
                     <view key="view" contentMode="scaleToFill" id="dwm-pz-dDO">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="Sow-Vz-lVb">
+                                <rect key="frame" x="0.0" y="44" width="414" height="56"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </searchBar>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="UWx-mP-RPM">
+                                <rect key="frame" x="0.0" y="100" width="414" height="762"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </tableView>
+                        </subviews>
                         <color key="backgroundColor" red="0.63052593058135908" green="0.045729250416685983" blue="0.12005908702180432" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="Xyn-8f-wqj" firstAttribute="bottom" secondItem="UWx-mP-RPM" secondAttribute="bottom" id="1KF-he-9Yz"/>
+                            <constraint firstItem="Xyn-8f-wqj" firstAttribute="trailing" secondItem="UWx-mP-RPM" secondAttribute="trailing" id="IXd-L9-07C"/>
+                            <constraint firstItem="UWx-mP-RPM" firstAttribute="top" secondItem="Sow-Vz-lVb" secondAttribute="bottom" id="JVe-oy-K4g"/>
+                            <constraint firstItem="Sow-Vz-lVb" firstAttribute="trailing" secondItem="Xyn-8f-wqj" secondAttribute="trailing" id="O6l-Tn-OD4"/>
+                            <constraint firstItem="UWx-mP-RPM" firstAttribute="leading" secondItem="Xyn-8f-wqj" secondAttribute="leading" id="QKb-7z-Wju"/>
+                            <constraint firstItem="Sow-Vz-lVb" firstAttribute="top" secondItem="Xyn-8f-wqj" secondAttribute="top" id="aoT-WO-6gT"/>
+                            <constraint firstItem="Sow-Vz-lVb" firstAttribute="leading" secondItem="Xyn-8f-wqj" secondAttribute="leading" id="o7c-up-kUz"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="Xyn-8f-wqj"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0Ye-ln-gM3" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2319" y="138"/>
+            <point key="canvasLocation" x="2287" y="138"/>
         </scene>
     </scenes>
     <resources>

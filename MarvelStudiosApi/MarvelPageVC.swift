@@ -10,12 +10,24 @@ import UIKit
 
 class MarvelPageVC: UIPageViewController {
 lazy var allVC = [self.getViewController(storyboard: "trailers"),self.getViewController(storyboard: "comics"),self.getViewController(storyboard: "characters")]
+    var pageControl = UIPageControl()
     override func viewDidLoad() {
         super.viewDidLoad()
         dataSource = self
         setViewControllers([allVC[0]], direction: .forward, animated: true, completion: nil)
-        
+        delegate = self
+        configPageControl()
     }
+    func configPageControl(){
+        pageControl = UIPageControl(frame: CGRect(x: 0, y: Int(UIScreen.main.bounds.maxY - 50), width: Int(UIScreen.main.bounds.width), height: 50))
+        pageControl.numberOfPages = allVC.count
+        pageControl.currentPage = 0
+        pageControl.tintColor = .black
+        pageControl.pageIndicatorTintColor = .white
+        pageControl.currentPageIndicatorTintColor = .black
+        self.view.addSubview(pageControl)
+    }
+
     
     func getViewController(storyboard name: String) -> UIViewController {
         return UIStoryboard.init(name: "Main", bundle: nil).instantiateViewController(withIdentifier: name)
@@ -47,3 +59,12 @@ extension MarvelPageVC: UIPageViewControllerDataSource {
     
     
 }
+
+extension MarvelPageVC: UIPageViewControllerDelegate {
+    func pageViewController(_ pageViewController: UIPageViewController, didFinishAnimating finished: Bool, previousViewControllers: [UIViewController], transitionCompleted completed: Bool) {
+        let pageContentVC = pageViewController.viewControllers![0]
+        self.pageControl.currentPage = allVC.index(of: pageContentVC)!
+    }
+    
+}
+
