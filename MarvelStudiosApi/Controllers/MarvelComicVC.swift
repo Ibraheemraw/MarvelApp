@@ -21,7 +21,7 @@ class MarvelComicVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         comicTableView.dataSource = self
-        comicTableView.delegate = self
+       
         comicSearchbar.delegate = self
         getData()
     }
@@ -32,14 +32,17 @@ class MarvelComicVC: UIViewController {
         }
     }
 
-    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        guard let destination = segue.destination as? DetailComicVC, let indexPath = comicTableView.indexPathForSelectedRow else {
+            fatalError("Error with the perapre for segue function")
+        }
+        destination.comicsIExpect = comics[indexPath.row]
+    }
 }
 extension MarvelComicVC: UISearchBarDelegate {
     
 }
-extension MarvelComicVC: UITableViewDelegate {
-    
-}
+
 extension MarvelComicVC: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return comics.count
@@ -49,6 +52,8 @@ extension MarvelComicVC: UITableViewDataSource {
         let cell = tableView.dequeueReusableCell(withIdentifier: "ComicCell", for: indexPath)
         let comicToSet = comics[indexPath.row]
         cell.textLabel?.text = comicToSet.title
+    
+        
         return cell
     }
     

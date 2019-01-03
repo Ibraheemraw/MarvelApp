@@ -9,7 +9,7 @@
 import UIKit
 
 class MarvelPageVC: UIPageViewController {
-lazy var allVC = [self.getViewController(storyboard: "trailers"),self.getViewController(storyboard: "comics"),self.getViewController(storyboard: "characters")]
+lazy var allVC = [self.getViewController(storyboard: "comics"),self.getViewController(storyboard: "trailers"),self.getViewController(storyboard: "characters")]
     var pageControl = UIPageControl()
     override func viewDidLoad() {
         super.viewDidLoad()
