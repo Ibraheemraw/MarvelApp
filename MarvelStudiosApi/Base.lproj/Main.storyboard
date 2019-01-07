@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="lgU-J8-DVr">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Tpv-gy-UqZ">
     <device id="retina6_5" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -9,13 +9,15 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Marvel PageVC-->
+        <!--MARVEL STUDIOS-->
         <scene sceneID="BJh-zF-fc4">
             <objects>
-                <pageViewController autoresizesArchivedViewToFullSize="NO" transitionStyle="scroll" navigationOrientation="horizontal" spineLocation="none" id="lgU-J8-DVr" customClass="MarvelPageVC" customModule="MarvelStudiosApi" customModuleProvider="target" sceneMemberID="viewController"/>
+                <pageViewController autoresizesArchivedViewToFullSize="NO" transitionStyle="scroll" navigationOrientation="horizontal" spineLocation="none" id="lgU-J8-DVr" customClass="MarvelPageVC" customModule="MarvelStudiosApi" customModuleProvider="target" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" title="MARVEL STUDIOS" id="ewc-gP-nlM"/>
+                </pageViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nBG-9u-2i4" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-775" y="138"/>
+            <point key="canvasLocation" x="3247.826086956522" y="-750"/>
         </scene>
         <!--Trailer View Controller-->
         <scene sceneID="tne-QT-ifu">
@@ -82,7 +84,7 @@
         <!--Marvel Character View Controller-->
         <scene sceneID="1IG-l2-0lC">
             <objects>
-                <viewController storyboardIdentifier="comics" id="9SO-8H-0aB" customClass="MarvelCharacterViewController" customModule="MarvelStudiosApi" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="characters" id="9SO-8H-0aB" customClass="MarvelCharacterViewController" customModule="MarvelStudiosApi" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="age-zg-UFE">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -103,27 +105,40 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="stanlee" translatesAutoresizingMaskIntoConstraints="NO" id="Qjo-j3-6eu">
-                                                    <rect key="frame" x="62" y="32.666666666666671" width="290" height="151.66666666666663"/>
+                                                    <rect key="frame" x="103.66666666666669" y="17" width="207" height="156"/>
                                                 </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aVe-Vb-fgS">
-                                                    <rect key="frame" x="31" y="11" width="352" height="21"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <nil key="textColor"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="6" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aVe-Vb-fgS">
+                                                    <rect key="frame" x="31" y="0.0" width="352" height="16"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="33"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
+                                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="some text " textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2ZK-85-ZtE">
+                                                    <rect key="frame" x="11" y="174" width="392" height="31.666666666666657"/>
+                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                                                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                </textView>
                                             </subviews>
+                                            <color key="backgroundColor" red="0.63052593059999995" green="0.045729250419999999" blue="0.12005908699999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                             <constraints>
-                                                <constraint firstItem="Qjo-j3-6eu" firstAttribute="width" secondItem="Ood-ZX-RrV" secondAttribute="width" multiplier="0.7" id="BYu-Hy-Zmk"/>
-                                                <constraint firstItem="aVe-Vb-fgS" firstAttribute="top" secondItem="Ood-ZX-RrV" secondAttribute="topMargin" id="Bah-yn-w0H"/>
-                                                <constraint firstItem="Qjo-j3-6eu" firstAttribute="centerX" secondItem="Ood-ZX-RrV" secondAttribute="centerX" id="MpS-ux-z0H"/>
-                                                <constraint firstAttribute="trailingMargin" secondItem="aVe-Vb-fgS" secondAttribute="trailing" constant="11" id="TNY-c1-and"/>
-                                                <constraint firstItem="aVe-Vb-fgS" firstAttribute="leading" secondItem="Ood-ZX-RrV" secondAttribute="leadingMargin" constant="11" id="dH2-oi-WEP"/>
-                                                <constraint firstItem="Qjo-j3-6eu" firstAttribute="centerY" secondItem="Ood-ZX-RrV" secondAttribute="centerY" id="gwO-LU-IDf"/>
-                                                <constraint firstItem="Qjo-j3-6eu" firstAttribute="height" secondItem="Ood-ZX-RrV" secondAttribute="height" multiplier="0.7" id="w9u-z9-goJ"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="aVe-Vb-fgS" secondAttribute="trailing" constant="11" id="3II-7a-5BZ"/>
+                                                <constraint firstItem="2ZK-85-ZtE" firstAttribute="top" secondItem="Qjo-j3-6eu" secondAttribute="bottom" constant="1" id="3xn-rc-UzW"/>
+                                                <constraint firstItem="2ZK-85-ZtE" firstAttribute="leading" secondItem="Ood-ZX-RrV" secondAttribute="leading" constant="11" id="8Xi-iV-eOh"/>
+                                                <constraint firstItem="Qjo-j3-6eu" firstAttribute="top" secondItem="aVe-Vb-fgS" secondAttribute="bottom" constant="1" id="Hiu-gP-IMt"/>
+                                                <constraint firstItem="aVe-Vb-fgS" firstAttribute="top" secondItem="Ood-ZX-RrV" secondAttribute="topMargin" constant="-11" id="I2Z-Xf-fYt"/>
+                                                <constraint firstItem="aVe-Vb-fgS" firstAttribute="leading" secondItem="Ood-ZX-RrV" secondAttribute="leadingMargin" constant="11" id="MOb-q0-4aD"/>
+                                                <constraint firstAttribute="bottom" secondItem="2ZK-85-ZtE" secondAttribute="bottom" constant="11" id="OgK-vb-wQB"/>
+                                                <constraint firstAttribute="trailing" secondItem="2ZK-85-ZtE" secondAttribute="trailing" constant="11" id="W98-aI-6aM"/>
+                                                <constraint firstItem="Qjo-j3-6eu" firstAttribute="centerX" secondItem="Ood-ZX-RrV" secondAttribute="centerX" id="ZZU-4e-sIC"/>
+                                                <constraint firstItem="Qjo-j3-6eu" firstAttribute="width" secondItem="Ood-ZX-RrV" secondAttribute="width" multiplier="0.5" id="Zmr-GS-rax"/>
+                                                <constraint firstItem="Qjo-j3-6eu" firstAttribute="centerY" secondItem="Ood-ZX-RrV" secondAttribute="centerY" constant="-13.333333333333329" id="cSg-eg-pZw"/>
+                                                <constraint firstItem="Qjo-j3-6eu" firstAttribute="height" secondItem="Ood-ZX-RrV" secondAttribute="height" multiplier="0.6" constant="26" id="dvT-4t-omr"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
                                             <outlet property="characterImage" destination="Qjo-j3-6eu" id="uYZ-73-h3L"/>
+                                            <outlet property="heroDescription" destination="2ZK-85-ZtE" id="RIV-W8-sPK"/>
                                             <outlet property="heroNameLabel" destination="aVe-Vb-fgS" id="xJU-iL-tRl"/>
                                         </connections>
                                     </tableViewCell>
@@ -154,17 +169,13 @@
         <!--Marvel ComicVC-->
         <scene sceneID="Quy-wO-jIh">
             <objects>
-                <viewController storyboardIdentifier="characters" id="y3c-XD-Pg3" customClass="MarvelComicVC" customModule="MarvelStudiosApi" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="comics" id="y3c-XD-Pg3" customClass="MarvelComicVC" customModule="MarvelStudiosApi" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="dwm-pz-dDO">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="Sow-Vz-lVb">
-                                <rect key="frame" x="0.0" y="88" width="414" height="56"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </searchBar>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="UWx-mP-RPM">
-                                <rect key="frame" x="0.0" y="144" width="414" height="718"/>
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="ComicCell" textLabel="fof-MH-MRB" style="IBUITableViewCellStyleDefault" id="qIv-Lr-tNp">
@@ -182,6 +193,7 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
+                                            <color key="backgroundColor" red="0.63052593059999995" green="0.045729250419999999" blue="0.12005908699999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         </tableViewCellContentView>
                                         <connections>
                                             <segue destination="c1E-hg-AH4" kind="show" id="0cu-sT-3BO"/>
@@ -192,25 +204,20 @@
                         </subviews>
                         <color key="backgroundColor" red="0.63052593058135908" green="0.045729250416685983" blue="0.12005908702180432" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
+                            <constraint firstItem="UWx-mP-RPM" firstAttribute="top" secondItem="Xyn-8f-wqj" secondAttribute="top" id="0Jj-k7-8tE"/>
                             <constraint firstItem="Xyn-8f-wqj" firstAttribute="bottom" secondItem="UWx-mP-RPM" secondAttribute="bottom" id="1KF-he-9Yz"/>
                             <constraint firstItem="Xyn-8f-wqj" firstAttribute="trailing" secondItem="UWx-mP-RPM" secondAttribute="trailing" id="IXd-L9-07C"/>
-                            <constraint firstItem="UWx-mP-RPM" firstAttribute="top" secondItem="Sow-Vz-lVb" secondAttribute="bottom" id="JVe-oy-K4g"/>
-                            <constraint firstItem="Sow-Vz-lVb" firstAttribute="trailing" secondItem="Xyn-8f-wqj" secondAttribute="trailing" id="O6l-Tn-OD4"/>
                             <constraint firstItem="UWx-mP-RPM" firstAttribute="leading" secondItem="Xyn-8f-wqj" secondAttribute="leading" id="QKb-7z-Wju"/>
-                            <constraint firstItem="Sow-Vz-lVb" firstAttribute="top" secondItem="Xyn-8f-wqj" secondAttribute="top" id="aoT-WO-6gT"/>
-                            <constraint firstItem="Sow-Vz-lVb" firstAttribute="leading" secondItem="Xyn-8f-wqj" secondAttribute="leading" id="o7c-up-kUz"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Xyn-8f-wqj"/>
                     </view>
-                    <navigationItem key="navigationItem" id="RaO-S7-OC2"/>
                     <connections>
-                        <outlet property="comicSearchbar" destination="Sow-Vz-lVb" id="BrT-nf-J11"/>
                         <outlet property="comicTableView" destination="UWx-mP-RPM" id="lp6-BP-qjt"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0Ye-ln-gM3" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3197.1014492753625" y="137.94642857142856"/>
+            <point key="canvasLocation" x="3129" y="138"/>
         </scene>
         <!--Detail ComicVC-->
         <scene sceneID="mUF-Be-dPX">
@@ -221,22 +228,22 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="stanlee" translatesAutoresizingMaskIntoConstraints="NO" id="vR9-Rg-FYI">
-                                <rect key="frame" x="20.666666666666657" y="108.66666666666669" width="372.66666666666674" height="448.00000000000006"/>
+                                <rect key="frame" x="20.666666666666657" y="93" width="372.66666666666674" height="448"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FVm-yG-ESS">
-                                <rect key="frame" x="0.0" y="556.66666666666663" width="414" height="21"/>
+                                <rect key="frame" x="0.0" y="541" width="414" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VEr-ME-RiN">
-                                <rect key="frame" x="0.0" y="577.66666666666663" width="414" height="284.33333333333337"/>
+                                <rect key="frame" x="0.0" y="562" width="414" height="300"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <mutableString key="text">The Avengers are a fictional team of superheroes appearing in American comic books published by Marvel Comics. The team made its debut in The Avengers #1 (cover-dated Sept. 1963), created by writer-editor Stan Lee and artist/co-plotter Jack Kirby. The Avengers is Lee and Kirby's renovation of a previous superhero team, All-Winners Squad, who appeared in comic books series published by Marvel Comics' predecessor Timely Comics.
+                                <string key="text">The Avengers are a fictional team of superheroes appearing in American comic books published by Marvel Comics. The team made its debut in The Avengers #1 (cover-dated Sept. 1963), created by writer-editor Stan Lee and artist/co-plotter Jack Kirby. The Avengers is Lee and Kirby's renovation of a previous superhero team, All-Winners Squad, who appeared in comic books series published by Marvel Comics' predecessor Timely Comics.
 
 Labeled "Earth's Mightiest Heroes", the Avengers originally consisted of Ant-Man, the Hulk, Iron Man, Thor, and the Wasp. Ant-Man had become Giant-Man by issue #2. The original Captain America was discovered trapped in ice in issue #4, and joined the group after they revived him. A rotating roster became a hallmark of the series, although one theme remained consistent: the Avengers fight "the foes no single superhero can withstand." The team, famous for its battle cry of "Avengers Assemble!", has featured humans, mutants, Inhumans, androids, aliens, supernatural beings, and even former villains.
 
-The team has appeared in a wide variety of media outside of comic books, including a number of different animated television series and direct-to-video films. The 2012 live-action feature film The Avengers, directed by Joss Whedon, set numerous records during its box office run, including one of the biggest opening debuts in North America, with a weekend gross of $207.4 million.[1] A second Avengers film titled Avengers: Age of Ultron was released on May 1, 2015, followed by Avengers: Infinity War, which became the first superhero film to gross over $2 billion and was released on April 27, 2018. Avengers: Endgame is scheduled for release on April 26, 2019.</mutableString>
+The team has appeared in a wide variety of media outside of comic books, including a number of different animated television series and direct-to-video films. The 2012 live-action feature film The Avengers, directed by Joss Whedon, set numerous records during its box office run, including one of the biggest opening debuts in North America, with a weekend gross of $207.4 million.[1] A second Avengers film titled Avengers: Age of Ultron was released on May 1, 2015, followed by Avengers: Infinity War, which became the first superhero film to gross over $2 billion and was released on April 27, 2018. Avengers: Endgame is scheduled for release on April 26, 2019.</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
@@ -258,31 +265,32 @@ The team has appeared in a wide variety of media outside of comic books, includi
                         <viewLayoutGuide key="safeArea" id="V2F-Ek-zkR"/>
                     </view>
                     <connections>
+                        <outlet property="comicDescrip" destination="VEr-ME-RiN" id="fhq-6V-V7q"/>
                         <outlet property="comicImg" destination="vR9-Rg-FYI" id="Pk2-Rs-pYb"/>
                         <outlet property="comicPriceLabel" destination="FVm-yG-ESS" id="ubz-E3-yHQ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Co4-3E-OpD" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4073.913043478261" y="188.83928571428569"/>
+            <point key="canvasLocation" x="4596" y="138"/>
         </scene>
         <!--Navigation Controller-->
-        <scene sceneID="Sa3-tu-MFO">
+        <scene sceneID="YoD-8H-GKf">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="odk-vv-fIu" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Tpv-gy-UqZ" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="KRM-aJ-YVn">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" barStyle="blackTranslucent" translucent="NO" largeTitles="YES" id="HBQ-Js-ycq">
+                        <rect key="frame" x="0.0" y="44" width="414" height="96"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="y3c-XD-Pg3" kind="relationship" relationship="rootViewController" id="ePE-30-lSH"/>
+                        <segue destination="lgU-J8-DVr" kind="relationship" relationship="rootViewController" id="TXb-st-6Kc"/>
                     </connections>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="eWP-NS-FfP" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CUH-Vr-7bP" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2286.9565217391305" y="137.94642857142856"/>
+            <point key="canvasLocation" x="2337.68115942029" y="-750"/>
         </scene>
     </scenes>
     <resources>

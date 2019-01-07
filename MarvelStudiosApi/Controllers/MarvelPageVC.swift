@@ -9,7 +9,7 @@
 import UIKit
 
 class MarvelPageVC: UIPageViewController {
-lazy var allVC = [self.getViewController(storyboard: "comics"),self.getViewController(storyboard: "trailers"),self.getViewController(storyboard: "characters")]
+lazy var allVC = [self.getViewController(storyboard: "characters"),self.getViewController(storyboard: "trailers"),self.getViewController(storyboard: "comics")]
     var pageControl = UIPageControl()
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -17,6 +17,7 @@ lazy var allVC = [self.getViewController(storyboard: "comics"),self.getViewContr
         setViewControllers([allVC[0]], direction: .forward, animated: true, completion: nil)
         delegate = self
         configPageControl()
+        
     }
     func configPageControl(){
         pageControl = UIPageControl(frame: CGRect(x: 0, y: Int(UIScreen.main.bounds.maxY - 50), width: Int(UIScreen.main.bounds.width), height: 50))

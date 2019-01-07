@@ -29,7 +29,14 @@ class TrailerViewController: UIViewController {
 }
 
 extension TrailerViewController: UISearchBarDelegate {
-    
+//    func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
+//        trailers = Trailer.fetchVideos()
+//        if searchText == ""{
+//            return
+//        } else  {
+//            trailers = Trailer.fetchVideos().filter{$0.trailerName.lowercased().contains(searchText.lowercased())}
+//        }
+//    }
 }
 
 extension TrailerViewController: UITableViewDataSource {

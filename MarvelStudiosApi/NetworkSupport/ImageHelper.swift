@@ -21,8 +21,11 @@ class ImageHelper {
                 callBack(error, nil)
             }
             if let data = data {
-                let image = UIImage(data: data)
-                callBack(nil, image)
+                DispatchQueue.global().async {
+                    let image = UIImage(data: data)
+                    callBack(nil, image)
+                }
+                
             }
         }.resume()
     }

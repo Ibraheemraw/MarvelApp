@@ -8,7 +8,7 @@
 
 import Foundation
 
-class SecretKeys {
+struct SecretKeys {
     static let events = "314"
     static let ts = "1"
     static let apiKey = "19bff63c692ceeab404b3b2d890731c8"

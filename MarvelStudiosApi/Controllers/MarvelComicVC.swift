@@ -9,7 +9,7 @@
 import UIKit
 
 class MarvelComicVC: UIViewController {
-    @IBOutlet weak var comicSearchbar: UISearchBar!
+//    @IBOutlet weak var comicSearchbar: UISearchBar!
     @IBOutlet weak var comicTableView: UITableView!
     var comics = [MarvelComic](){
         didSet{
@@ -20,9 +20,10 @@ class MarvelComicVC: UIViewController {
     }
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         comicTableView.dataSource = self
        
-        comicSearchbar.delegate = self
+//        comicSearchbar.delegate = self
         getData()
     }
     
@@ -39,9 +40,9 @@ class MarvelComicVC: UIViewController {
         destination.comicsIExpect = comics[indexPath.row]
     }
 }
-extension MarvelComicVC: UISearchBarDelegate {
-    
-}
+//extension MarvelComicVC: UISearchBarDelegate {
+//
+//}
 
 extension MarvelComicVC: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -52,6 +53,8 @@ extension MarvelComicVC: UITableViewDataSource {
         let cell = tableView.dequeueReusableCell(withIdentifier: "ComicCell", for: indexPath)
         let comicToSet = comics[indexPath.row]
         cell.textLabel?.text = comicToSet.title
+        cell.backgroundColor = UIColor.init(displayP3Red: CGFloat(161/255), green: CGFloat(12/255), blue: CGFloat(31/255), alpha: CGFloat(0))
+        cell.textLabel?.textColor = .white
     
         
         return cell

@@ -13,6 +13,7 @@ class MarvelCharacterViewController: UIViewController {
     @IBOutlet weak var characterSearchBar: UISearchBar!
     var characters = [MarvelCharacter](){
         didSet{
+            
             DispatchQueue.main.async {// dispatch back to the main thread
                 self.characterTableView.reloadData()
             }
