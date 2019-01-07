@@ -39,7 +39,16 @@ class MarvelCharacterViewController: UIViewController {
 }
 
 extension MarvelCharacterViewController: UISearchBarDelegate{
-    
+    func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
+//        guard let searchText = searchBar.text else {return}
+        
+    }
+    /*
+     func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
+     guard let searchText = searchBar.text else {return}
+     fetchMovies(keyword: searchText)
+     }
+     */
 }
 extension MarvelCharacterViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {

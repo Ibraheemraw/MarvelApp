@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		48030FFA21DEC2D8005C67F2 /* DetailComicVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48030FF921DEC2D8005C67F2 /* DetailComicVC.swift */; };
+		4803102F21E3F1E8005C67F2 /* MIHD.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 4803102E21E3F1E8005C67F2 /* MIHD.mp4 */; };
 		48ABD2D221D547E700957972 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48ABD2D121D547E700957972 /* AppDelegate.swift */; };
 		48ABD2D421D547E700957972 /* TrailerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48ABD2D321D547E700957972 /* TrailerViewController.swift */; };
 		48ABD2D721D547E700957972 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 48ABD2D521D547E700957972 /* Main.storyboard */; };
@@ -61,6 +62,7 @@
 
 /* Begin PBXFileReference section */
 		48030FF921DEC2D8005C67F2 /* DetailComicVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailComicVC.swift; sourceTree = "<group>"; };
+		4803102E21E3F1E8005C67F2 /* MIHD.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = MIHD.mp4; sourceTree = "<group>"; };
 		48ABD2CE21D547E700957972 /* MarvelStudiosApi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MarvelStudiosApi.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		48ABD2D121D547E700957972 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		48ABD2D321D547E700957972 /* TrailerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrailerViewController.swift; sourceTree = "<group>"; };
@@ -203,6 +205,7 @@
 		48ABD32921D5895500957972 /* Videos */ = {
 			isa = PBXGroup;
 			children = (
+				4803102E21E3F1E8005C67F2 /* MIHD.mp4 */,
 				48ABD2F221D588FA00957972 /* AATW.mp4 */,
 				48ABD2EE21D588F700957972 /* AntMan.mp4 */,
 				48ABD2F621D588FC00957972 /* AOU.mp4 */,
@@ -302,6 +305,7 @@
 				48ABD2D921D547EA00957972 /* Assets.xcassets in Resources */,
 				48ABD30D21D5890900957972 /* IronMan3.mp4 in Resources */,
 				48ABD32821D5890900957972 /* CAWS.mp4 in Resources */,
+				4803102F21E3F1E8005C67F2 /* MIHD.mp4 in Resources */,
 				48ABD30F21D5890900957972 /* GOTG2.mp4 in Resources */,
 				48ABD31C21D5890900957972 /* CATFA.mp4 in Resources */,
 				48ABD31A21D5890900957972 /* IronMan2.mp4 in Resources */,

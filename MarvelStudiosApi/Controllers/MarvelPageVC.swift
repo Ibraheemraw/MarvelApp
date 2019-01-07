@@ -7,18 +7,45 @@
 //
 
 import UIKit
-
+import AVKit
+import AVFoundation
 class MarvelPageVC: UIPageViewController {
 lazy var allVC = [self.getViewController(storyboard: "characters"),self.getViewController(storyboard: "trailers"),self.getViewController(storyboard: "comics")]
     var pageControl = UIPageControl()
+    var player = AVPlayer()
+    var marvelIntroPlayerVC = AVPlayerViewController()
+    var introDidPlay = false
+
+    override func viewWillAppear(_ animated: Bool) {
+        let videoPath =  Bundle.main.path(forResource: "MIHD", ofType: ".mp4")
+        let videoPathURL = URL(fileURLWithPath: videoPath!)
+        player = AVPlayer(url: videoPathURL)
+        marvelIntroPlayerVC.player = player
+        
+        if !introDidPlay {
+            self.present(marvelIntroPlayerVC, animated: true, completion: {
+                self.marvelIntroPlayerVC.player?.play()
+                self.introDidPlay = true
+                
+            })
+            
+        }
+        
+    
+    }
+//    func stopIntro(){
+//        self.dismiss(animated: true, completion: {
+//            self.marvelIntroPlayerVC.player?.play()
+//        })
+//    }
     override func viewDidLoad() {
         super.viewDidLoad()
         dataSource = self
         setViewControllers([allVC[0]], direction: .forward, animated: true, completion: nil)
         delegate = self
         configPageControl()
-        
     }
+    
     func configPageControl(){
         pageControl = UIPageControl(frame: CGRect(x: 0, y: Int(UIScreen.main.bounds.maxY - 50), width: Int(UIScreen.main.bounds.width), height: 50))
         pageControl.numberOfPages = allVC.count

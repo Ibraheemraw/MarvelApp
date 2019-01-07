@@ -13,7 +13,11 @@ import AVFoundation
 class TrailerViewController: UIViewController {
     @IBOutlet weak var trailerTableView: UITableView!
     @IBOutlet weak var trailerSearchBar: UISearchBar!
-    var trailers = Trailer.fetchVideos()
+    var trailers = Trailer.fetchVideos(){
+        didSet{
+          self.trailerTableView.reloadData()
+        }
+    }
     var player = AVPlayer()
     var marvelPlayerVC = AVPlayerViewController()
     override func viewDidLoad() {
@@ -29,14 +33,14 @@ class TrailerViewController: UIViewController {
 }
 
 extension TrailerViewController: UISearchBarDelegate {
-//    func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
-//        trailers = Trailer.fetchVideos()
-//        if searchText == ""{
-//            return
-//        } else  {
-//            trailers = Trailer.fetchVideos().filter{$0.trailerName.lowercased().contains(searchText.lowercased())}
-//        }
-//    }
+    func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
+        trailers = Trailer.fetchVideos()
+        if searchText == ""{
+            return
+        } else  {
+            trailers = Trailer.fetchVideos().filter{$0.trailerName.lowercased().contains(searchText.lowercased())}
+        }
+    }
 }
 
 extension TrailerViewController: UITableViewDataSource {
