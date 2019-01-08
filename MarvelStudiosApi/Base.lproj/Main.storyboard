@@ -303,6 +303,7 @@ The team has appeared in a wide variety of media outside of comic books, includi
                         <outlet property="comicDescrip" destination="VEr-ME-RiN" id="fhq-6V-V7q"/>
                         <outlet property="comicImg" destination="vR9-Rg-FYI" id="Pk2-Rs-pYb"/>
                         <outlet property="comicPriceLabel" destination="FVm-yG-ESS" id="ubz-E3-yHQ"/>
+                        <outlet property="purchaseBttn" destination="4tA-rC-1Ty" id="Q2T-iC-3Zo"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Co4-3E-OpD" userLabel="First Responder" sceneMemberID="firstResponder"/>

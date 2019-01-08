@@ -12,10 +12,13 @@ class DetailComicVC: UIViewController {
     @IBOutlet weak var comicImg: UIImageView!
     @IBOutlet weak var comicPriceLabel: UILabel!
     @IBOutlet weak var comicDescrip: UITextView!
+    @IBOutlet weak var purchaseBttn: UIButton!
     var comicsIExpect: MarvelComic!
     override func viewDidLoad() {
         super.viewDidLoad()
         setUpVCItems()
+        purchaseBttn.isHidden = true
+        
         
     }
     

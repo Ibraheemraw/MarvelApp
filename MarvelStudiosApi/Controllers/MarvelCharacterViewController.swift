@@ -25,6 +25,7 @@ class MarvelCharacterViewController: UIViewController {
         characterTableView.delegate = self
         characterSearchBar.delegate = self
         getData()
+        characterSearchBar.isHidden = true
 //        CharacterAPIClient.searchCharacters()
         
        

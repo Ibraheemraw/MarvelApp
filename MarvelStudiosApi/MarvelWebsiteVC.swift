@@ -24,8 +24,8 @@ class MarvelWebsiteVC: UIViewController {
 //            print("Bad url")
 //            return
 //        }
-        let request = URLRequest(url: url)
-        web.load(request)
+//        let request = URLRequest(url: url)
+//        web.load(request)
     }
     
     
