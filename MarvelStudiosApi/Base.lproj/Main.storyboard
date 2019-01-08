@@ -262,20 +262,40 @@ The team has appeared in a wide variety of media outside of comic books, includi
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4tA-rC-1Ty">
+                                <rect key="frame" x="11" y="55" width="392" height="27"/>
+                                <state key="normal">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="Purchase">
+                                            <attributes>
+                                                <color key="NSColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <font key="NSFont" size="20" name=".AppleSystemUIFont"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                </state>
+                                <connections>
+                                    <segue destination="4P2-TU-Ofm" kind="show" id="SIT-wb-WGX"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.63052593059999995" green="0.045729250419999999" blue="0.12005908699999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
+                            <constraint firstItem="vR9-Rg-FYI" firstAttribute="top" secondItem="4tA-rC-1Ty" secondAttribute="bottom" constant="11" id="1Gg-LF-EWq"/>
                             <constraint firstItem="vR9-Rg-FYI" firstAttribute="centerX" secondItem="V2F-Ek-zkR" secondAttribute="centerX" id="1Hv-7m-64h"/>
                             <constraint firstItem="V2F-Ek-zkR" firstAttribute="bottom" secondItem="VEr-ME-RiN" secondAttribute="bottom" id="4Ez-GB-Dl7"/>
+                            <constraint firstItem="4tA-rC-1Ty" firstAttribute="top" secondItem="V2F-Ek-zkR" secondAttribute="top" constant="11" id="Fve-uE-dhx"/>
                             <constraint firstItem="vR9-Rg-FYI" firstAttribute="centerY" secondItem="V2F-Ek-zkR" secondAttribute="centerY" multiplier="0.7" id="H5v-d6-S19"/>
                             <constraint firstItem="V2F-Ek-zkR" firstAttribute="trailing" secondItem="FVm-yG-ESS" secondAttribute="trailing" id="HNn-Qk-NYU"/>
                             <constraint firstItem="vR9-Rg-FYI" firstAttribute="height" secondItem="wbG-sf-xgX" secondAttribute="height" multiplier="0.5" id="I7S-WM-da9"/>
                             <constraint firstItem="V2F-Ek-zkR" firstAttribute="trailing" secondItem="VEr-ME-RiN" secondAttribute="trailing" id="Oad-RB-7ol"/>
+                            <constraint firstItem="V2F-Ek-zkR" firstAttribute="trailing" secondItem="4tA-rC-1Ty" secondAttribute="trailing" constant="11" id="Vrz-pU-YuU"/>
                             <constraint firstItem="vR9-Rg-FYI" firstAttribute="width" secondItem="wbG-sf-xgX" secondAttribute="width" multiplier="0.9" id="a16-Q7-Y1c"/>
                             <constraint firstItem="VEr-ME-RiN" firstAttribute="top" secondItem="FVm-yG-ESS" secondAttribute="bottom" id="bVr-Ia-PRc"/>
                             <constraint firstItem="FVm-yG-ESS" firstAttribute="top" secondItem="vR9-Rg-FYI" secondAttribute="bottom" id="idV-41-Gsb"/>
                             <constraint firstItem="FVm-yG-ESS" firstAttribute="leading" secondItem="V2F-Ek-zkR" secondAttribute="leading" id="lPl-Ym-XiA"/>
                             <constraint firstItem="VEr-ME-RiN" firstAttribute="leading" secondItem="V2F-Ek-zkR" secondAttribute="leading" id="mT1-LJ-9a7"/>
+                            <constraint firstItem="4tA-rC-1Ty" firstAttribute="leading" secondItem="V2F-Ek-zkR" secondAttribute="leading" constant="11" id="qy8-zc-Kdh"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="V2F-Ek-zkR"/>
                     </view>
@@ -288,6 +308,40 @@ The team has appeared in a wide variety of media outside of comic books, includi
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Co4-3E-OpD" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="4596" y="138"/>
+        </scene>
+        <!--Marvel WebsiteVC-->
+        <scene sceneID="vRJ-h2-PVz">
+            <objects>
+                <viewController id="4P2-TU-Ofm" customClass="MarvelWebsiteVC" customModule="MarvelStudiosApi" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="fnO-UI-Nvt">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="s7a-1M-cKE">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <wkWebViewConfiguration key="configuration">
+                                    <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                                    <wkPreferences key="preferences"/>
+                                </wkWebViewConfiguration>
+                            </wkWebView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.63052593059999995" green="0.045729250419999999" blue="0.12005908699999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="s7a-1M-cKE" firstAttribute="top" secondItem="7UO-Oi-t4b" secondAttribute="top" id="4P0-oo-Mg5"/>
+                            <constraint firstItem="7UO-Oi-t4b" firstAttribute="trailing" secondItem="s7a-1M-cKE" secondAttribute="trailing" id="PeQ-H9-4ep"/>
+                            <constraint firstItem="7UO-Oi-t4b" firstAttribute="bottom" secondItem="s7a-1M-cKE" secondAttribute="bottom" id="YpS-Hy-wBy"/>
+                            <constraint firstItem="s7a-1M-cKE" firstAttribute="leading" secondItem="7UO-Oi-t4b" secondAttribute="leading" id="u22-ad-2x8"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="7UO-Oi-t4b"/>
+                    </view>
+                    <connections>
+                        <outlet property="web" destination="s7a-1M-cKE" id="HJA-FB-l8s"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wSr-XN-mY5" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5799" y="138"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="YoD-8H-GKf">

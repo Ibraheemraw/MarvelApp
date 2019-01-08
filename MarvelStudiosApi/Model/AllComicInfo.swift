@@ -21,9 +21,14 @@ struct MarvelComic: Codable {
     let pageCount: Int
     let prices: [MarvelComicPrice]
     let thumbnail: ComicThumbnailWrapper
+    let urls: [UrlWrapper]
 }
 struct MarvelComicPrice: Codable {
     let price: Double?
+}
+struct UrlWrapper: Codable {
+    let type: String?
+    let url: String?
 }
 struct ComicThumbnailWrapper: Codable {
     let path: String

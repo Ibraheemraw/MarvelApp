@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		48030FFA21DEC2D8005C67F2 /* DetailComicVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48030FF921DEC2D8005C67F2 /* DetailComicVC.swift */; };
 		4803102F21E3F1E8005C67F2 /* MIHD.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 4803102E21E3F1E8005C67F2 /* MIHD.mp4 */; };
+		4803103321E40B5A005C67F2 /* marvelLogo.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 4803103221E40B5A005C67F2 /* marvelLogo.jpeg */; };
+		4803103521E40BFB005C67F2 /* MarvelWebsiteVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4803103421E40BFB005C67F2 /* MarvelWebsiteVC.swift */; };
 		48ABD2D221D547E700957972 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48ABD2D121D547E700957972 /* AppDelegate.swift */; };
 		48ABD2D421D547E700957972 /* TrailerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48ABD2D321D547E700957972 /* TrailerViewController.swift */; };
 		48ABD2D721D547E700957972 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 48ABD2D521D547E700957972 /* Main.storyboard */; };
@@ -63,6 +65,8 @@
 /* Begin PBXFileReference section */
 		48030FF921DEC2D8005C67F2 /* DetailComicVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailComicVC.swift; sourceTree = "<group>"; };
 		4803102E21E3F1E8005C67F2 /* MIHD.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = MIHD.mp4; sourceTree = "<group>"; };
+		4803103221E40B5A005C67F2 /* marvelLogo.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = marvelLogo.jpeg; sourceTree = "<group>"; };
+		4803103421E40BFB005C67F2 /* MarvelWebsiteVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarvelWebsiteVC.swift; sourceTree = "<group>"; };
 		48ABD2CE21D547E700957972 /* MarvelStudiosApi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MarvelStudiosApi.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		48ABD2D121D547E700957972 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		48ABD2D321D547E700957972 /* TrailerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrailerViewController.swift; sourceTree = "<group>"; };
@@ -193,11 +197,13 @@
 				48030FF821DEBF16005C67F2 /* SupportingFiles */,
 				48030FF621DEBEBE005C67F2 /* Controllers */,
 				48ABD2D521D547E700957972 /* Main.storyboard */,
+				4803103421E40BFB005C67F2 /* MarvelWebsiteVC.swift */,
 				48030FF921DEC2D8005C67F2 /* DetailComicVC.swift */,
 				48030FF721DEBEDD005C67F2 /* Model */,
 				48030FF521DEBE7F005C67F2 /* NetworkSupport */,
 				48ABD32921D5895500957972 /* Videos */,
 				48ABD2DD21D547EA00957972 /* Info.plist */,
+				4803103221E40B5A005C67F2 /* marvelLogo.jpeg */,
 			);
 			path = MarvelStudiosApi;
 			sourceTree = "<group>";
@@ -336,6 +342,7 @@
 				48ABD31521D5890900957972 /* IronMan.mp4 in Resources */,
 				48ABD31921D5890900957972 /* DarkWorld.mp4 in Resources */,
 				48ABD31421D5890900957972 /* Hulk.mp4 in Resources */,
+				4803103321E40B5A005C67F2 /* marvelLogo.jpeg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -349,6 +356,7 @@
 				48ABD34421DA9E3900957972 /* MarvelCharacterViewController.swift in Sources */,
 				48ABD2D421D547E700957972 /* TrailerViewController.swift in Sources */,
 				48ABD37D21DE9A1700957972 /* ComicApiClient.swift in Sources */,
+				4803103521E40BFB005C67F2 /* MarvelWebsiteVC.swift in Sources */,
 				48ABD34221DA947900957972 /* CharacterAPIClient.swift in Sources */,
 				48ABD2E421D54FA700957972 /* MarvelPageVC.swift in Sources */,
 				48ABD2D221D547E700957972 /* AppDelegate.swift in Sources */,
